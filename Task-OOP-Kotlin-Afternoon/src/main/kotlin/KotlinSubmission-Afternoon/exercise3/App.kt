@@ -18,3 +18,20 @@ fun main() {
     // Buat di bawah sini
 
 }
+class ScoreEvaluator(private val score: Int) {
+
+        fun evaluateScore(): String {
+            return when {
+                score >= 90 -> "Selamat! Anda mendapatkan nilai A."
+                score in 80..89 -> "Anda mendapatkan nilai B."
+                score in 70..79 -> "Anda mendapatkan nilai C."
+                score in 60..69 -> "Anda mendapatkan nilai D."
+                else -> "Anda mendapatkan nilai E."
+            }
+        }
+    }
+
+        val scoreEvaluator = ScoreEvaluator(85)
+        val result = scoreEvaluator.evaluateScore()
+        println(result)
+    }
