@@ -51,7 +51,6 @@ class Hero {
     */
     
 }
-package id.infinitelearning.KotlinSubmission.exercise5
 
 class Hero {
 
